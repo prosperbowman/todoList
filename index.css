@@ -1,0 +1,132 @@
+body{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+header{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0;
+    height: 50px;
+    background-image: linear-gradient(red 30%,greenyellow,blue);
+}
+.search{
+    text-align: right;
+    width: 95%;
+    /* background-color: blue; */
+}
+.box_search{
+    width: 200px;
+    margin-bottom:5px;
+}
+.search_icon{
+    font-size: 25px;
+    text-align: right;
+}
+.box_search.lost {
+	display: none;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+input{
+    width: 80%;
+    height: 25px;
+}
+#btn{
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: gold;
+}
+#btn:hover{
+    color: greenyellow;
+    background-color: white;
+}
+ol{
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+    display: block;
+    font-size: 18px;
+}
+ol li{
+    display: flex;
+    background-color: white;
+    gap: 20px;
+}
+li .text{
+    width: 100%;
+}
+li .actions{
+    display: flex;
+}
+li .complete{
+    cursor: pointer;
+}
+li .delete{
+    cursor: pointer;
+}
+.actions{
+    gap: 30px;
+}
+span{
+    width: 20%;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+/* Completed todos styles*/
+.actions.completed {
+	cursor: not-allowed;
+	background-color: #eb0808;
+    display: none;
+}
+
+.actions.completed .lists {
+	color: #d30505;
+	text-decoration: line-through;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) {
+    body{
+        background-color: red;
+    }
+
+    .search{
+    text-align: right;
+    width: 80%;
+    /* background-color: blue; */
+    }
+    input{
+    width: 60%;
+    height: 25px;
+    }
+    ol{
+        padding: 15px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 768px) {
+ body{
+        background-image: linear-gradient(blue,rgb(82, 82, 190),white);
+    }
+
+    .search{
+    text-align: right;
+    width: 80%;
+    /* background-color: blue; */
+    }
+    input{
+    width: 60%;
+    height: 25px;
+    }
+    ol{
+        padding: 15px;
+    }
+}
